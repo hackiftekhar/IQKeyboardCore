@@ -1,0 +1,16 @@
+PODS:
+  - IQKeyboardCore (1.0.0)
+
+DEPENDENCIES:
+  - IQKeyboardCore (from `../`)
+
+EXTERNAL SOURCES:
+  IQKeyboardCore:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IQKeyboardCore: 4c107a0b88b63a2808872f14b7faee351e39783d
+
+PODFILE CHECKSUM: 0e060870ccabc05ffc2d41089cb7ec827ad6688d
+
+COCOAPODS: 1.15.2

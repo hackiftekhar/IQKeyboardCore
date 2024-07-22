@@ -41,11 +41,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6C5249FCA87E9F486291C205 /* Pods-IQKeyboardCore_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IQKeyboardCore_Example.debug.xcconfig"; path = "Target Support Files/Pods-IQKeyboardCore_Example/Pods-IQKeyboardCore_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		7012BD1BD9008E6661617B39 /* IQKeyboardCore.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = IQKeyboardCore.podspec; path = ../IQKeyboardCore.podspec; sourceTree = "<group>"; };
-		701382FB468A6455FBA8F1B5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		701382FB468A6455FBA8F1B5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7F8C9473C5014EBF792F0CD7 /* Pods_IQKeyboardCore_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IQKeyboardCore_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B47BC6175E4E6EA8C03DCD /* Pods-IQKeyboardCore_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IQKeyboardCore_Tests.release.xcconfig"; path = "Target Support Files/Pods-IQKeyboardCore_Tests/Pods-IQKeyboardCore_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C2E0EA5ED363B35891769A76 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C0C03D312C4E911F00B1C57B /* IQKeyboardCore.podspec.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = IQKeyboardCore.podspec.json; path = ../IQKeyboardCore.podspec.json; sourceTree = "<group>"; };
+		C2E0EA5ED363B35891769A76 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D7C024B6754915C551A4BE58 /* Pods-IQKeyboardCore_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IQKeyboardCore_Tests.debug.xcconfig"; path = "Target Support Files/Pods-IQKeyboardCore_Tests/Pods-IQKeyboardCore_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,7 +132,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				7012BD1BD9008E6661617B39 /* IQKeyboardCore.podspec */,
+				C0C03D312C4E911F00B1C57B /* IQKeyboardCore.podspec.json */,
 				701382FB468A6455FBA8F1B5 /* README.md */,
 				C2E0EA5ED363B35891769A76 /* LICENSE */,
 			);
@@ -147,7 +147,6 @@
 				D7C024B6754915C551A4BE58 /* Pods-IQKeyboardCore_Tests.debug.xcconfig */,
 				B9B47BC6175E4E6EA8C03DCD /* Pods-IQKeyboardCore_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -479,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IQKeyboardCore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -494,6 +495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IQKeyboardCore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -516,6 +518,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,6 +537,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
