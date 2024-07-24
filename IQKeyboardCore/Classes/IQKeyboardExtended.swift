@@ -61,5 +61,4 @@ public extension IQKeyboardExtended where Self: UIView {
 // swiftlint:enable identifier_name
 
 @available(iOSApplicationExtension, unavailable)
-extension UIView: IQKeyboardExtended {
-}
+extension UIView: IQKeyboardExtended {}

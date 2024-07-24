@@ -149,6 +149,7 @@ public extension IQKeyboardExtension where Base: UIView {
 }
 
 @available(iOSApplicationExtension, unavailable)
+@MainActor
 @objc public extension UIView {
 
     @available(*, unavailable, renamed: "iq.viewContainingController()")

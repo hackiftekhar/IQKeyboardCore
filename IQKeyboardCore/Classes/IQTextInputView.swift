@@ -23,6 +23,8 @@
 
 import UIKit
 
+@available(iOSApplicationExtension, unavailable)
+@MainActor
 @objc public protocol IQTextInputView where Self: UIView {
 
     @available(iOS 16.0, *)
@@ -39,6 +41,8 @@ import UIKit
     @objc var inputAccessoryView: UIView? { get set }
 }
 
+@available(iOSApplicationExtension, unavailable)
+@MainActor
 extension UITextField: IQTextInputView {
 
     @available(iOS 16.0, *)
@@ -48,6 +52,8 @@ extension UITextField: IQTextInputView {
     public var findInteraction: UIFindInteraction? { nil }
 }
 
+@available(iOSApplicationExtension, unavailable)
+@MainActor
 extension UITextView: IQTextInputView {
     public var isEnabled: Bool { isEditable }
 }
