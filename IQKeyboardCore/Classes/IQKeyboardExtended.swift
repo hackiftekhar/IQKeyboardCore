@@ -28,7 +28,7 @@ import UIKit
 @available(iOSApplicationExtension, unavailable)
 public struct IQKeyboardExtension<Base: AnyObject> {
     public private(set) weak var base: Base?
-    public init(_ base: Base) {
+    fileprivate init(_ base: Base) {
         self.base = base
     }
 }
@@ -46,7 +46,7 @@ public protocol IQKeyboardExtended {
     var iq: IQKeyboardExtension<Base> { get set }
 }
 
-// swiftlint:disable unused_setter _value
+// swiftlint:disable unused_setter_value
 @available(iOSApplicationExtension, unavailable)
 public extension IQKeyboardExtended where Self: UIView {
 
