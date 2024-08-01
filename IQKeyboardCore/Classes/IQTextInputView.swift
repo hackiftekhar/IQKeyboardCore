@@ -25,35 +25,62 @@ import UIKit
 
 @available(iOSApplicationExtension, unavailable)
 @MainActor
-@objc public protocol IQTextInputView where Self: UIView {
+@objc public protocol IQTextInputView where Self: UIView, Self: UITextInputTraits {
 
     @available(iOS 16.0, *)
-    @objc var isFindInteractionEnabled: Bool { get }
+    @objc var iqIsFindInteractionEnabled: Bool { get }
 
     @available(iOS 16.0, *)
-    @objc var findInteraction: UIFindInteraction? { get }
+    @objc var iqFindInteraction: UIFindInteraction? { get }
 
     @objc var returnKeyType: UIReturnKeyType { get set }
     @objc var keyboardAppearance: UIKeyboardAppearance { get set }
 
-    @objc var isEnabled: Bool { get }
+    @objc var iqIsEnabled: Bool { get }
 
     @objc var inputAccessoryView: UIView? { get set }
 }
 
 @available(iOSApplicationExtension, unavailable)
 @MainActor
-extension UITextField: IQTextInputView {
+@objc extension UITextField: IQTextInputView {
 
     @available(iOS 16.0, *)
-    public var isFindInteractionEnabled: Bool { false }
+    @objc public var iqIsFindInteractionEnabled: Bool { false }
 
     @available(iOS 16.0, *)
-    public var findInteraction: UIFindInteraction? { nil }
+    @objc public var iqFindInteraction: UIFindInteraction? { nil }
+
+    public var iqIsEnabled: Bool { isEnabled }
 }
 
 @available(iOSApplicationExtension, unavailable)
 @MainActor
-extension UITextView: IQTextInputView {
-    public var isEnabled: Bool { isEditable }
+@objc extension UITextView: IQTextInputView {
+    @available(iOS 16.0, *)
+    public var iqIsFindInteractionEnabled: Bool { isFindInteractionEnabled }
+
+    @available(iOS 16.0, *)
+    public var iqFindInteraction: UIFindInteraction? { findInteraction }
+
+    public var iqIsEnabled: Bool { isEditable }
+}
+
+@available(iOSApplicationExtension, unavailable)
+@MainActor
+@objc extension UISearchBar: IQTextInputView {
+
+    @available(iOS 16.0, *)
+    @objc public var iqIsFindInteractionEnabled: Bool { false }
+
+    @available(iOS 16.0, *)
+    @objc public var iqFindInteraction: UIFindInteraction? { nil }
+
+    public var iqIsEnabled: Bool {
+        if #available(iOS 16.4, *) {
+            return isEnabled
+        } else {
+            return searchTextField.isEnabled
+        }
+    }
 }
