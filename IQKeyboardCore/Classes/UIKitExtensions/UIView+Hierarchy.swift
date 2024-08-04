@@ -1,5 +1,5 @@
 //
-//  IQUIView+Hierarchy.swift
+//  UIView+Hierarchy.swift
 //  https://github.com/hackiftekhar/IQKeyboardCore
 //  Copyright (c) 2013-24 Iftekhar Qurashi.
 //
@@ -51,6 +51,9 @@ public extension IQKeyboardExtension where Base: UIView {
 
         return nil
     }
+
+    @available(*, unavailable, message: "This has been removed because it no longer needed")
+    func topMostController() -> UIViewController? { nil }
 }
 
 @available(iOSApplicationExtension, unavailable)
@@ -69,34 +72,36 @@ public extension IQKeyboardExtension where Base: UIView {
 
         var superView: UIView? = base?.superview
 
-        while let unwrappedSuperView: UIView = superView {
+        while let aSuperview: UIView = superView {
 
-            if unwrappedSuperView.isKind(of: classType) {
+            if aSuperview.isKind(of: classType) {
 
                 // If it's UIScrollView, then validating for special cases
-                if unwrappedSuperView is UIScrollView {
+                if aSuperview is UIScrollView {
 
-                    let classNameString: String = "\(type(of: unwrappedSuperView.self))"
+                    let classNameString: String = "\(type(of: aSuperview.self))"
 
-                    // If it's not UITableViewWrapperView OR UITableViewCellScrollView class,
+                    // If it's not UITableViewWrapperView class,
                     // this is internal class which is actually manage in UITableview.
                     // The speciality of this class is that it's superview is UITableView.
-
-                    // If it's not _UIQueuingScrollView class or other internal class,
+                    // If it's not UITableViewCellScrollView class,
+                    // this is internal class which is actually manage in UITableviewCell.
+                    // The speciality of this class is that it's superview is UITableViewCell.
+                    // If it's not _UIQueuingScrollView class,
                     // actually we validate for _ prefix which usually used by Apple internal classes
-                    if !(unwrappedSuperView.superview is UITableView),
-                       !(unwrappedSuperView.superview is UITableViewCell),
+                    if !(aSuperview.superview is UITableView),
+                       !(aSuperview.superview is UITableViewCell),
                        !classNameString.hasPrefix("_") {
                         return superView as? T
                     }
                 } else {
                     return superView as? T
                 }
-            } else if unwrappedSuperView == belowView {
+            } else if aSuperview == belowView {
                 return nil
             }
 
-            superView = unwrappedSuperView.superview
+            superView = aSuperview.superview
         }
 
         return nil
