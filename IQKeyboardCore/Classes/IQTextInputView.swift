@@ -51,7 +51,7 @@ import UIKit
     @available(iOS 16.0, *)
     public var iqFindInteraction: UIFindInteraction? { nil }
 
-    @objc public var iqIsEnabled: Bool { isEnabled }
+    public var iqIsEnabled: Bool { isEnabled }
 }
 
 @available(iOSApplicationExtension, unavailable)
