@@ -32,13 +32,6 @@
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = IQKeyboardCore;
 		};
-		C02E95A02C6A20100088C194 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C02E959B2C6A200F0088C194;
-			remoteInfo = "IQKeyboardCore-iOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -279,7 +272,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				C02E95A12C6A20100088C194 /* PBXTargetDependency */,
 			);
 			name = IQKeyboardCore_Example;
 			productName = IQKeyboardCore;
@@ -498,11 +490,6 @@
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* IQKeyboardCore_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
-		};
-		C02E95A12C6A20100088C194 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C02E959B2C6A200F0088C194 /* IQKeyboardCore */;
-			targetProxy = C02E95A02C6A20100088C194 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
