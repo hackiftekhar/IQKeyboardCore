@@ -15,7 +15,6 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		84AF09F9CE949F14FDDB50A0 /* Pods_IQKeyboardCore_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED010807E5958509A8F14C1 /* Pods_IQKeyboardCore_Tests.framework */; };
 		AE11D40932F36643BF1DED72 /* Pods_IQKeyboardCore_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8C9473C5014EBF792F0CD7 /* Pods_IQKeyboardCore_Example.framework */; };
-		C02E95A22C6A20100088C194 /* IQKeyboardCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02E959C2C6A200F0088C194 /* IQKeyboardCore.framework */; };
 		C02E95A32C6A20100088C194 /* IQKeyboardCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C02E959C2C6A200F0088C194 /* IQKeyboardCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C02E95B42C6A206F0088C194 /* IQKeyboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E95AB2C6A206F0088C194 /* IQKeyboardConstants.swift */; };
 		C02E95B62C6A206F0088C194 /* IQKeyboardExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E95AD2C6A206F0088C194 /* IQKeyboardExtended.swift */; };
@@ -83,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C02E95A22C6A20100088C194 /* IQKeyboardCore.framework in Frameworks */,
 				AE11D40932F36643BF1DED72 /* Pods_IQKeyboardCore_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
