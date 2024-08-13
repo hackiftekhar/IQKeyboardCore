@@ -279,9 +279,9 @@
 			productReference = 607FACE51AFB9204008FA782 /* IQKeyboardCore_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C02E959B2C6A200F0088C194 /* IQKeyboardCore */ = {
+		C02E959B2C6A200F0088C194 /* IQKeyboardCore-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C02E95A72C6A20100088C194 /* Build configuration list for PBXNativeTarget "IQKeyboardCore" */;
+			buildConfigurationList = C02E95A72C6A20100088C194 /* Build configuration list for PBXNativeTarget "IQKeyboardCore-iOS" */;
 			buildPhases = (
 				C02E95972C6A200F0088C194 /* Headers */,
 				C02E95982C6A200F0088C194 /* Sources */,
@@ -292,7 +292,7 @@
 			);
 			dependencies = (
 			);
-			name = IQKeyboardCore;
+			name = "IQKeyboardCore-iOS";
 			productName = "IQKeyboardCore-iOS";
 			productReference = C02E959C2C6A200F0088C194 /* IQKeyboardCore.framework */;
 			productType = "com.apple.product-type.framework";
@@ -338,7 +338,7 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* IQKeyboardCore_Example */,
 				607FACE41AFB9204008FA782 /* IQKeyboardCore_Tests */,
-				C02E959B2C6A200F0088C194 /* IQKeyboardCore */,
+				C02E959B2C6A200F0088C194 /* IQKeyboardCore-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -705,7 +705,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.infoenum.IQKeyboardCore-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = IQKeyboardCore;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -749,7 +749,7 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.infoenum.IQKeyboardCore-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = IQKeyboardCore;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -789,7 +789,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C02E95A72C6A20100088C194 /* Build configuration list for PBXNativeTarget "IQKeyboardCore" */ = {
+		C02E95A72C6A20100088C194 /* Build configuration list for PBXNativeTarget "IQKeyboardCore-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C02E95A52C6A20100088C194 /* Debug */,
