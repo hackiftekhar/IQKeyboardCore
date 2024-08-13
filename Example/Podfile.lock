@@ -1,5 +1,5 @@
 PODS:
-  - IQKeyboardCore (1.0.4)
+  - IQKeyboardCore (1.0.5)
 
 DEPENDENCIES:
   - IQKeyboardCore (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IQKeyboardCore: 310a5386778eada46ac2a1c5645b73f5c7770d9e
+  IQKeyboardCore: 28c8bf3bcd8ba5aa1570b318cbc4da94b861711e
 
 PODFILE CHECKSUM: 0e060870ccabc05ffc2d41089cb7ec827ad6688d
 

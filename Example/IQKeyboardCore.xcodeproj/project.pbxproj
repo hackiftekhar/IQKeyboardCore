@@ -15,7 +15,6 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		84AF09F9CE949F14FDDB50A0 /* Pods_IQKeyboardCore_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED010807E5958509A8F14C1 /* Pods_IQKeyboardCore_Tests.framework */; };
 		AE11D40932F36643BF1DED72 /* Pods_IQKeyboardCore_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8C9473C5014EBF792F0CD7 /* Pods_IQKeyboardCore_Example.framework */; };
-		C02E95A32C6A20100088C194 /* IQKeyboardCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C02E959C2C6A200F0088C194 /* IQKeyboardCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C02E95B42C6A206F0088C194 /* IQKeyboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E95AB2C6A206F0088C194 /* IQKeyboardConstants.swift */; };
 		C02E95B62C6A206F0088C194 /* IQKeyboardExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E95AD2C6A206F0088C194 /* IQKeyboardExtended.swift */; };
 		C02E95B72C6A206F0088C194 /* IQTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E95AE2C6A206F0088C194 /* IQTextInputView.swift */; };
@@ -32,20 +31,6 @@
 			remoteInfo = IQKeyboardCore;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C02E95A42C6A20100088C194 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C02E95A32C6A20100088C194 /* IQKeyboardCore.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		19B804A7F337646B0143488F /* Pods-IQKeyboardCore_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IQKeyboardCore_Example.release.xcconfig"; path = "Target Support Files/Pods-IQKeyboardCore_Example/Pods-IQKeyboardCore_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -265,7 +250,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				3A180DF2063A274228D546B4 /* [CP] Embed Pods Frameworks */,
-				C02E95A42C6A20100088C194 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -712,7 +696,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 CocoaPods. All rights reserved.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
@@ -757,7 +741,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 CocoaPods. All rights reserved.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
