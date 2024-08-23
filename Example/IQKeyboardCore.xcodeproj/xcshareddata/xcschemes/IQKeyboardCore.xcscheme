@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C02E959B2C6A200F0088C194"
-               BuildableName = "IQKeyboardCore_iOS.framework"
+               BuildableName = "IQKeyboardCore.framework"
                BlueprintName = "IQKeyboardCore-iOS"
                ReferencedContainer = "container:IQKeyboardCore.xcodeproj">
             </BuildableReference>
@@ -50,7 +50,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C02E959B2C6A200F0088C194"
-            BuildableName = "IQKeyboardCore_iOS.framework"
+            BuildableName = "IQKeyboardCore.framework"
             BlueprintName = "IQKeyboardCore-iOS"
             ReferencedContainer = "container:IQKeyboardCore.xcodeproj">
          </BuildableReference>

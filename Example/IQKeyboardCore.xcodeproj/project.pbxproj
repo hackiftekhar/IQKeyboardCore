@@ -55,7 +55,6 @@
 		C02E95AD2C6A206F0088C194 /* IQKeyboardExtended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardExtended.swift; sourceTree = "<group>"; };
 		C02E95AE2C6A206F0088C194 /* IQTextInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextInputView.swift; sourceTree = "<group>"; };
 		C02E95B02C6A206F0088C194 /* UIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Hierarchy.swift"; sourceTree = "<group>"; };
-		C02E95B22C6A206F0088C194 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		C02E95B32C6A206F0088C194 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		C0C03D312C4E911F00B1C57B /* IQKeyboardCore.podspec.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = IQKeyboardCore.podspec.json; path = ../IQKeyboardCore.podspec.json; sourceTree = "<group>"; };
 		C2E0EA5ED363B35891769A76 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -213,7 +212,6 @@
 		C02E95B12C6A206F0088C194 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				C02E95B22C6A206F0088C194 /* .gitkeep */,
 				C02E95B32C6A206F0088C194 /* PrivacyInfo.xcprivacy */,
 			);
 			path = Assets;
@@ -250,6 +248,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				3A180DF2063A274228D546B4 /* [CP] Embed Pods Frameworks */,
+				C0620C482C746C29006AE1CE /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -433,6 +432,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C0620C482C746C29006AE1CE /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
